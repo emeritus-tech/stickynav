@@ -1,13 +1,13 @@
 {
-  "name": "sticky-nav",
+  "name": "stickynav",
   "version": "1.0.0",
   "author": "Emeritus",
-  "description": "Sticky nav",
+  "description": "stickynav",
   "repository": {
     "type": "git",
     "url": "https://github.com/emeritus-tech/sticky-nav"
   },
-  "main": "index.js",
+  "main": "./stickynav.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --inline --progress --colors",
     "build": "cross-env NODE_ENV=production webpack"
@@ -27,8 +27,9 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
     "babel-plugin-transform-es2015-classes": "^6.24.1",
-    "cross-env": "^6.0.0",
     "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "cross-env": "^6.0.0",
     "css-hot-loader": "^1.4.4",
     "css-loader": "^3.2.0",
     "html-webpack-plugin": "^3.2.0",

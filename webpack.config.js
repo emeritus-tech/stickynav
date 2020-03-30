@@ -2,27 +2,29 @@ const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const env = process.env.NODE_ENV;
 
 module.exports = {
-  entry: './index.js',
-
+  entry: {
+    main: './src/stickynav.js',
+    mainStyles: './src/stickynav.scss',
+  },
   mode: env,
-
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, './'),
+    filename: 'stickynav.js',
+    library: 'stickynav',
+    libraryTarget: 'umd',
     publicPath: '/'
   },
-
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     compress: true,
-    port: 3500,
+    port: 3600,
     hot: true,
   },
-
   module: {
     rules: [
       {
@@ -41,15 +43,15 @@ module.exports = {
       }
     ]
   },
-
   plugins: [
-    new HtmlWebpackPlugin({template: './index.html'}),
+    new HtmlWebpackPlugin({template: './src/index.html'}),
     new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({
-      // Options similar to the same options in webpackOptions.output
-      // both options are optional
-      filename: "[name].css",
+      filename: "stickynav.css",
       chunkFilename: "[id].css"
-    })
+    }),
+    new CopyWebpackPlugin([
+      { from: path.join(__dirname, "src", "stickynav.scss"), to: "./" },
+    ]),
   ]
 };
