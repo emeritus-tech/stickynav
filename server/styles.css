@@ -1,0 +1,31 @@
+body {
+    background-color: #ecf0f1;
+    height: 2000px;
+    margin: 0;
+    padding: 0;
+}
+
+.div-1 {
+    background-color: #1abc9c;
+    color: #ecf0f1;
+    font-size: 22px;
+    height: 161px;
+    padding-top: 139px;
+    text-align: center;
+}
+
+.div-2 {
+    background-color: #3498db;
+    height: 300px;
+}
+
+.this-is-sticky {
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    display: none;
+    font-family: 'Leckerli One', cursive;
+    font-size: 22px;
+    height: 50px;
+    padding-top: 17px;
+    text-align: center;
+}

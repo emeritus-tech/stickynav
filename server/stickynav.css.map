@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://stickynav/./src/stickynav.scss"],"names":[],"mappings":"AAAA,YAAY,eAAe,WAAW,aAAa,yBAAyB,gBAAgB,MAAM,mBAAmB","file":"stickynav.css","sourcesContent":[".sticky-nav{position:fixed;width:100%;z-index:9999;display:block !important}.sticky-nav-top{top:0}.sticky-nav-bottom{bottom:0}\n"],"sourceRoot":""}
