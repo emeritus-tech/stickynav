@@ -7,7 +7,7 @@ class stickynav {
         scrollThreshold = 86, 
         desktopPosition = 'top',
         mobilePosition = 'bottom', 
-    }) {
+    } = {}) {
         this.scrollThreshold = scrollThreshold;
         this.mobilePosition = mobilePosition;
         this.desktopPosition = desktopPosition;

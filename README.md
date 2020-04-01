@@ -1,9 +1,9 @@
-# Sticky nav
+# Stickynav
 
 ## Instructions
 * Install dependencies - `yarn`
 * Start the server - `yarn start` to see a live example
-* Build the library - `yarn build` distribution files are stored on the root for access facility
+* Build the library - `yarn build`
 * Enjoy!
 
 ## Usage
@@ -25,7 +25,7 @@
 ### In node environments
 
 #### Install
-`yarn add emeritus-tech/stickynav`
+`yarn add @emeritus-tech/stickynav`
 
 #### Import
 
